@@ -1,3 +1,19 @@
+body {
+  text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 10px 30px;
+    color: aliceblue;
+    background-color: grey;
+    border: 1px black solid;
+}
+
 .square {
     background-color: mediumpurple;
 }
