@@ -1,12 +1,11 @@
 const container = document.querySelector("#container");
 container.style.display = "flex";
 container.style.flexDirection = "column";
-container.style.gap = "20px";
 container.style.padding = "20px";
 for (let i = 1; i <= 16; i++) {
     const rowContainer = document.createElement("div");
     rowContainer.style.display = "flex";
-    rowContainer.style.gap = "20px";
+    rowContainer.style.justifyContent = "center";
     for (let j = 1; j <= 16; j++) {
         const squareDiv = document.createElement("div");
         squareDiv.style.width = "40px";
@@ -19,12 +18,6 @@ for (let i = 1; i <= 16; i++) {
 
 container.addEventListener("mouseover", e => {
     if (e.target.className === "square") {
-        e.target.classList.toggle("hover");
-    }
-});
-
-container.addEventListener("mouseout", e => {
-    if (e.target.className === "square hover") {
-        e.target.classList.toggle("hover");
+        e.target.classList.add("hover");
     }
 });
