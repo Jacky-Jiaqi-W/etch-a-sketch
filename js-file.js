@@ -16,3 +16,15 @@ for (let i = 1; i <= 16; i++) {
     }
     container.appendChild(rowContainer);
 }
+
+container.addEventListener("mouseover", e => {
+    if (e.target.className === "square") {
+        e.target.classList.toggle("hover");
+    }
+});
+
+container.addEventListener("mouseout", e => {
+    if (e.target.className === "square hover") {
+        e.target.classList.toggle("hover");
+    }
+});
